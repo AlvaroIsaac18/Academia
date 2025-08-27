@@ -354,12 +354,6 @@
   color: #e74c3c;
 }
 
-.lesson-duration-mc {
-  margin-left: auto;
-  font-size: 0.85rem;
-  color: #6c757d;
-}
-
 
 
 /* Course sidebar styles */
@@ -1062,3 +1056,251 @@
             }
         }
 
+
+          /* ========== ESTILOS GENERALES DE LAS LECCIONES ========== */
+        .leccion-page-mc {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .leccion-container-mc {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ========== HEADER DE PÁGINA ========== */
+        .leccion-header-mc {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .leccion-title-mc {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #13161c;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .leccion-subtitle-mc {
+            font-size: 1.2rem;
+            color: #6c757d;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        /* ========== NAVEGACIÓN INTERNA ========== */
+        .leccion-nav-mc {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 3rem;
+        }
+
+        .leccion-nav-link-mc {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            padding: 12px 25px;
+            border-radius: 30px;
+            color: #6c757d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .leccion-nav-link-mc:hover {
+            background: #e9ecef;
+            color: #13161c;
+        }
+
+        .leccion-nav-link-mc.active {
+            background: #98ca3f;
+            color: #13161c;
+            border-color: #98ca3f;
+        }
+
+        /* ========== SECCIONES DE CONTENIDO ========== */
+        .leccion-section-mc {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .leccion-section-header-mc {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .leccion-section-icon-mc {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #0b335b, #1a1a2e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .leccion-section-title-mc {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #13161c;
+            margin: 0;
+        }
+
+        .leccion-section-content-mc {
+            line-height: 1.7;
+            color: #6c757d;
+        }
+
+        .leccion-section-content-mc p {
+            margin-bottom: 20px;
+        }
+
+        /* ========== TARJETAS DE INFORMACIÓN ========== */
+        .leccion-cards-mc {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .leccion-card-mc {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            border-left: 4px solid #98ca3f;
+        }
+
+        .leccion-card-title-mc {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #13161c;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .leccion-card-content-mc {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        /* ========== COMPARATIVAS ========== */
+        .leccion-table-mc {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .leccion-table-mc th,
+        .leccion-table-mc td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .leccion-table-mc th {
+            background: linear-gradient(135deg, #0b335b, #1a1a2e);
+            color: white;
+            font-weight: 600;
+        }
+
+        .leccion-table-mc tr:last-child td {
+            border-bottom: none;
+        }
+
+        .leccion-table-mc tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .leccion-title-mc {
+                font-size: 2.2rem;
+            }
+
+            .leccion-nav-mc {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .leccion-cards-mc {
+                grid-template-columns: 1fr;
+            }
+
+            .leccion-table-mc {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .leccion-section-header-mc {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .leccion-title-mc {
+                font-size: 1.8rem;
+            }
+
+            .leccion-section-mc {
+                padding: 20px;
+            }
+
+            .leccion-section-title-mc {
+                font-size: 1.5rem;
+            }
+        }
+
+/* ========== ESTILOS PARA IMÁGENES ========== */
+        .leccion-image-container-mc {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .leccion-image-mc {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .leccion-image-mc:hover {
+            transform: scale(1.03);
+        }
+
+        .leccion-image-caption-mc {
+            background: linear-gradient(135deg, #0b335b, #1a1a2e);
+            color: white;
+            padding: 12px 20px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .leccion-img-carrusel-mc{
+          width: 90vw !important;
+          height: 80vh !important;
+        }
