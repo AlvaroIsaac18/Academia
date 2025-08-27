@@ -1282,8 +1282,8 @@
 
         .leccion-image-mc {
             width: 100%;
-            height: 300px;
-            object-fit: cover;
+            height: 70vh;
+            
             display: block;
             transition: transform 0.5s ease;
         }
@@ -1302,5 +1302,5 @@
 
         .leccion-img-carrusel-mc{
           width: 90vw !important;
-          height: 80vh !important;
+          height: 90vh !important;
         }
